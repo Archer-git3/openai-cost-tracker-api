@@ -15,7 +15,6 @@
 
 Проєкт використовує Python **3.13**.  
 
-1. Створіть та активуйте віртуальне середовище:
 
 Встановіть залежності:
 
@@ -30,7 +29,7 @@ pip install -r requirements.txt
 DATABASE_URL=postgresql+asyncpg://postgres:pasword@localhost:port/dbname
 OPENAI_API_KEY=your_openai_api_key_here
 ```
-Running the Project
+## Running the Project
 1. Запуск FastAPI серверу
 ```bash
 uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
