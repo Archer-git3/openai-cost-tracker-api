@@ -55,7 +55,7 @@ async def chat(
         messages=messages
     )
 
-    content = response.choices.message.content
+    content = response.choices[0].message.content
     usage = response.usage
     p_tokens = usage.prompt_tokens
     c_tokens = usage.completion_tokens
